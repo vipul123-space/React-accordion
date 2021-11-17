@@ -1,24 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import data from "./data";
+import Accordion from "./Accordion";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="container">
+        <h1>question and answer about login</h1>
+        <section className="main-section">
+          {data.map((information) => {
+            return (
+              <Accordion key={information.id} {...information}></Accordion>
+            );
+          })}
+        </section>
+      </div>
+    </>
   );
 }
 

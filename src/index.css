@@ -1,13 +1,73 @@
-body {
+*,
+*::after,
+*::before {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: inherit;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: lato, sans-serif;
+  font-weight: 400;
+  box-sizing: border-box;
+  background-color: #4b145b;
+}
+.container {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 2fr;
+  background-color: #f1f5f8;
+  width: 70%;
+  padding: 3rem;
+  margin-top: 3rem;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%);
+  border-radius: 5px;
+}
+h1 {
+  color: rgba(0, 0, 0, 0.767);
+  font-size: 2.5rem;
+  text-transform: capitalize;
+  font-weight: 600;
+  letter-spacing: 0.3rem;
+}
+.question_about {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 3px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.question_about:not(:last-child) {
+  margin-bottom: 2rem;
+}
+.question__about-heading {
+  font-size: 1.8rem;
+  color: rgba(0, 0, 0, 0.767);
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  text-transform: capitalize;
+}
+.question__about-info {
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+  margin-top: 1.2rem;
+  color: rgba(0, 0, 0, 0.767);
+}
+.title {
+  display: flex;
+  justify-content: space-between;
+}
+.btn {
+  width: 3rem;
+  font-size: 2rem;
+  color: maroon;
+  background-color: rgba(238, 238, 238, 0.747);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 3rem;
 }
