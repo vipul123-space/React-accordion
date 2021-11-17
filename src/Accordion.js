@@ -17,14 +17,14 @@ function Accordion({ id, title, info }) {
   const Button1 = () => {
     return (
       <button onClick={clickHandler} className="btn">
-        +
+        &#43;
       </button>
     );
   };
   const Button2 = () => {
     return (
       <button onClick={clickHandler} className="btn">
-        -
+        &#8722;
       </button>
     );
   };
